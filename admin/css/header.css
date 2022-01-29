@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1{
+    color: #fff;
+}
+h2 {
+    color: #444;
+}
+h3{
+    color: #999;
+}
+.icon{
+    font-size: 32px;
+}
+.side-menu {
+    position: fixed;
+    background: 0#fe5462;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-menu li .a-head {
+    font-size: 24px;
+    padding: 10px 40px;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+.side-menu li:hover .a-head {
+    background: white;
+    color: #f05462;
+}
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+.icon-case{
+    color: #f05462;
+    width: 40px;
+    height: 40px;
+}
+.container .content {
+    position: relative;
+   margin-top: 10vh;
+   min-height: 90vh;
+}
+.container .content .cards {
+    padding: 20px 15px;
+   display: flex;
+    align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.container .content .cards .card {
+    width: 250px;
+    height: 150px;
+    background: white;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2 ), 0 6px 20px 0 rgba(0, 0, 0, 0.19 );
+}
+
+@media screen and (max-width: 1050px) {
+    .side-menu li .a-head .icon{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .side-menu li .a-head span{
+        display: none;
+    }
+    .side-menu{
+        align-items: center;
+    }
+    .side-menu li .icon {
+        width: 40px;
+         height: 40px;
+     }
+}
+
+@media screen and (max-width:536px) {
+    .brand-name h1 {
+        font-size: 16px;
+    }
+    .container .content .cards {
+        justify-content: center;
+    }
+    .side-menu .a-head li .icon {
+        width: 30px;
+        height: 30px;
+    }
+}
